@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    background-color: #000;
+
+}
+
+.main {
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.side-bar {
+    width: 20rem;
+    height: 90%;
+    /* background-color: #ac6666; */
+    border-radius: 6px;
+    position: fixed;
+
+}
+
+.side-bar .brand {
+    background-color: #121212;
+    padding-top: 0.1rem;
+    width: 20rem;
+    height: 10rem;
+    border-radius: 10px;
+}
+
+.side-bar .brand .logo {
+    display: flex;
+    padding-left: 1.2rem;
+    padding-top: 1.2rem;
+}
+
+.side-bar .brand .logo a {
+    padding-left: 1rem;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.side-bar .brand .logo a:hover {
+    opacity: 1;
+}
+
+.side-bar .brand .logo i {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.side-bar .brand .logo i:hover {
+    opacity: 1;
+}
+
+.side-bar .library-box {
+    border-radius: 10px;
+    height: 80.5%;
+    margin-top: 0.5rem;
+    background-color: #121212;
+}
+
+.side-bar .library-box .sticky-nav {
+    border-radius: 6px;
+    padding-top: 1.3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.side-bar .library-box .lib-nav img {
+    width: 1rem;
+    padding-left: 1rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.side-bar .library-box .lib-nav img:hover {
+    opacity: 1;
+}
+
+.side-bar .library-box .lib-nav a {
+    padding-left: 1rem;
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.side-bar .library-box .lib-nav a:hover {
+    opacity: 1;
+}
+
+.side-bar .library-box i {
+    cursor: pointer;
+    padding-right: 0.8rem;
+    opacity: 0.6;
+}
+
+.side-bar .library-box span i:hover {
+    opacity: 1;
+}
+
+.side-bar .library-box .lib-playlist {
+
+    background-color: #2e2a2a7f;
+    height: 8rem;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1.5rem 0.5rem 0 0.5rem;
+}
+
+.content {
+    flex: 1;
+    background-color: #121212;
+    height: 92%;
+    margin-left: 20.6rem;
+    border-radius: 6px;
+    overflow: auto;
+    position: relative;
+}
+
+
+
+.content .nav-2 {
+    background-color: #121212;
+    border-radius: 4px;
+    width: 100%;
+    height: 65px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .nav-2 .next {
+    background-color: transparent;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content .nav-2 .register {
+    background-color: transparent;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+
+}
+
+.content .nav-2 span {
+    padding-left: 10px;
+    opacity: 0.5;
+}
+
+.content .nav-2 span img {
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.content .nav-2 .next span:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.content .nav-2 span button {
+    border: none;
+    width: 5.5rem;
+    font-weight: 500;
+    height: 2.4rem;
+    border-radius: 3rem;
+    background-color: transparent;
+    color: #fff;
+    opacity: 0.8;
+    font-size: 16px;
+}
+
+.content .nav-2 span button:hover {
+
+
+    opacity: 1;
+    cursor: pointer;
+}
+
+.boxes {
+    width: 100%;
+    margin-top: 2rem;
+    height: auto;
+    background-color: #121212;
+}
+
+.boxes .show {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 0 8px;
+}
+
+.boxes .all-file {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boxes .file {
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem 1rem 2rem 1rem;
+    border-radius: 5px;
+
+}
+
+.boxes .file:hover {
+    background-color: #2e2a2a7f;
+    cursor: pointer;
+}
+
+.show h3:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.player {
+    margin-top: 1rem;
+    width: 100%;
+    height: 7%;
+    /* background-color: rgb(97, 176, 120); */
+    position: fixed;
+    bottom: 1%;
+    display: flex;
+    justify-content: center;
+}
+.player .player-icon{
+    width: 50%;
+    background-color: #000;
+    height: 100%;
+    padding: 8px
+    ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.player .player-icon .play-line{
+    width: 30%;
+    /* background-color: #a07f7f; */
+    /* height: 50%; */
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+}
+.player-icon .progress{
+    margin-top: 2%;
+    height: 10%;
+    width: 80%;
+    opacity: 0.6;
+    
+}
+
+
+
+.player .player-icon i:hover{
+    cursor: pointer;
+    opacity: 1;
+}
