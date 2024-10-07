@@ -22,6 +22,36 @@ body {
     position: fixed;
 
 }
+@media (max-width:365px) {
+    .side-bar{ 
+        width: 100%;
+        height: 5rem;
+        background-color: #000;
+        display: flex;
+        justify-content: space-around;
+    } 
+    .brand{
+        display: flex;
+        justify-content: space-around;
+    }
+   
+    .brand .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content{
+        display: none;
+
+    }
+    .player{
+        display: none;
+    }
+    .library-box{
+        display: none;
+    }
+}
 
 .side-bar .brand {
     background-color: #121212;
