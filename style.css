@@ -15,6 +15,8 @@ body {
 }
 
 .side-bar {
+    position: relative;
+    bottom: 8%;
     width: 20rem;
     height: 90%;
     /* background-color: #ac6666; */
@@ -22,36 +24,7 @@ body {
     position: fixed;
 
 }
-@media (max-width:365px) {
-    .side-bar{ 
-        width: 100%;
-        height: 5rem;
-        background-color: #000;
-        display: flex;
-        justify-content: space-around;
-    } 
-    .brand{
-        display: flex;
-        justify-content: space-around;
-    }
-   
-    .brand .logo{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .content{
-        display: none;
 
-    }
-    .player{
-        display: none;
-    }
-    .library-box{
-        display: none;
-    }
-}
 
 .side-bar .brand {
     background-color: #121212;
@@ -271,17 +244,18 @@ body {
     display: flex;
     justify-content: center;
 }
-.player .player-icon{
+
+.player .player-icon {
     width: 50%;
     background-color: #000;
     height: 100%;
-    padding: 8px
-    ;
+    padding: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.player .player-icon .play-line{
+
+.player .player-icon .play-line {
     width: 30%;
     /* background-color: #a07f7f; */
     /* height: 50%; */
@@ -289,17 +263,18 @@ body {
     justify-content: space-around;
     font-size: 1rem;
 }
-.player-icon .progress{
+
+.player-icon .progress {
     margin-top: 2%;
     height: 10%;
     width: 80%;
     opacity: 0.6;
-    
+
 }
 
 
 
-.player .player-icon i:hover{
+.player .player-icon i:hover {
     cursor: pointer;
     opacity: 1;
 }
