@@ -273,3 +273,111 @@ body {
     cursor: pointer;
     opacity: 1;
 }
+
+/* mobile view  */
+
+@media (max-width: 768px) {
+
+   
+    .main {
+        padding: 0;
+        height: auto;
+    }
+
+    /* SIDEBAR HIDE */
+    .side-bar {
+        display: none;
+    }
+
+    /* CONTENT FULL WIDTH */
+    .content {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    /* NAV BAR */
+    .content .nav-2 {
+        height: 55px;
+        padding: 0 0.5rem;
+    }
+
+    .content .nav-2 .next {
+        display: none; /* hide arrows on mobile */
+    }
+
+    .content .nav-2 .register span button {
+        width: 4.5rem;
+        height: 2rem;
+        font-size: 14px;
+    }
+
+    /* BOX SECTIONS */
+    .boxes {
+        margin-top: 1rem;
+    }
+
+    .boxes .show h3 {
+        font-size: 1.1rem;
+    }
+
+    /* ALBUM GRID */
+    .boxes .all-file {
+        justify-content: space-between;
+        padding: 0 0.5rem;
+    }
+
+    .boxes .file {
+        width: 48%;
+        font-size: 1rem;
+        margin-left: 0;
+        padding: 0.8rem;
+    }
+
+    .boxes .file img {
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    /* PLAYER */
+    .player {
+        height: 60px;
+        bottom: 0;
+        margin-top: 0;
+    }
+
+    .player .player-icon {
+        width: 100%;
+        padding: 6px;
+    }
+
+    .player .player-icon .play-line {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+
+    .player-icon .progress {
+        width: 90%;
+        height: 6px;
+        background-color: #2e2a2a;
+        border-radius: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .boxes .file {
+        width: 100%;
+    }
+
+    .content .nav-2 .register span button {
+        width: 4rem;
+        font-size: 13px;
+    }
+
+    .player .player-icon .play-line {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}
